@@ -1,4 +1,6 @@
-
+body{
+    background-color: #fff9fe;
+}
 .pagamento-container
 {       
     font-family: 'Roboto', sans-serif!important;
@@ -6,10 +8,11 @@
 	width: 100%;
 	display: flex;
     flex-direction: row; 
-    color:#963E7B;
+    color:#0097e6;
 }
 
 .card {
+    padding: 10px;
 	width: 60rem;
     margin: auto;
     background: white;
@@ -70,7 +73,7 @@ p{
 .button{
     background: linear-gradient(
 135deg
-, #753370 0%, #298096 100%);
+, #d21aa1 0%, #0097e6 100%);
     padding: 15px;
     border: none;
     border-radius: 50px;

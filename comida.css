@@ -1,10 +1,18 @@
-
-
+body{
+    background-color: #f5f6fa;
+}
+.titulo {
+    text-align: center;
+    margin-top: 50px;
+    font-size:60px;
+    font: sans-serif;
+    color: #0097e6;
+}
 
 .container-comida {
-    display: flex;
+    
     font-size: 1.6em;
-    margin: 0;
+    margin-top: -100px;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -27,6 +35,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: .0em .1em .9em rgba(19, 2, 15, 0.2);
 }
 
 .card-comida:hover,
@@ -84,18 +93,18 @@
 
 /* color */
 .card-comida:first-child h3, .card-comida:nth-child(2) h3 {
-  color: #e84118;
+  color: #30b4fb;
 }
 
 .card-comida:first-child button,.card-comida:nth-child(2) button {
-  background-color: #e84118;
+  background-color: #30b4fb;
 }
 .card-comida:nth-child(3) h3, .card-comida:nth-child(4) h3 {
-    color: #fbc531;
+    color: #13a6f5;
   }
 
 .card-comida:nth-child(3) button, .card-comida:nth-child(4) button {
-    background-color: #fbc531;
+    background-color: #13a6f5;
   }
 
 .card-comida:nth-child(5) h3,.card-comida:last-child h3 {
