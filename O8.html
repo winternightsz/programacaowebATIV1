@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="O8.css">
-    <link defer href="scripts.js">
     <title>Nemaflix</title>
 </head>
 <body>
@@ -17,7 +16,7 @@
         <div class="informacoes">
           <div class="header-poster">
             <img class="posterzinho" src="https://upload.wikimedia.org/wikipedia/pt/6/62/Oceans_Eight_Poster.jpeg"/>
-            <h1>Oito Mulheres e Um Segredo</h1>
+            <h1 id="filmenome">Oito Mulheres e Um Segredo</h1>
             <h4>Gary Ross</h4>
             <span class="minutos">1h 51m</span>
             <p class="genero">Comédia</p>
@@ -35,8 +34,8 @@
           </div>
           <div class="horas-filme">
             <ul>
-              <li><span class=""><a href="assentos.html" class="botao" onclick="salvarFilme()">15:00</a></span></li>
-              <li><span class=""><a href="assentos.html" class="botao" onclick="salvarFilme()">18:00</a></span></li>           
+              <li><a href="assentos.html" class="botao"  onclick="salvarFilme()"><p id="horario">15:00</p></a></li>
+              <li><a href="assentos.html" class="botao" id="horario" onclick="salvarFilme()">18:00</a></li>           
             </ul>
           </div>
         </div>
@@ -44,4 +43,6 @@
       </div>
       
 </body>
+<script type="text/javascript" src="./scripts.js"></script>
+
 </html>
