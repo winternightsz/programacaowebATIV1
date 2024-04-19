@@ -1,11 +1,120 @@
-.comidas-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+
+
+
+.container-comida {
+    display: flex;
+    font-size: 1.6em;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+    font: sans-serif;
+    
 }
-         
-.comida {
-    height: 100px;
-    background-color: purple;
-    width: 100%;
+
+/* PRODUCT CARD */
+
+.card-comida {
+  background-color: #f4fbff;
+  border-radius: 10px;
+  color: #2f3640;
+  margin: 0 0.5em;
+  padding: 20px;
+  transition: all linear .2s;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-comida:hover,
+.card-comida:active {
+  box-shadow: .2em .5em .5em rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+
+.imagem-comida {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  width: 200px;
+}
+
+.primeira-comida-img {
+  background-image: url(./pipocacine.jpg);
+}
+
+.segunda-comida-img {
+  background-image: url(./refricine.jpg);
+}
+
+.terceira-comida-img {
+  background-image: url(./combocine.jpg);
+}
+
+.primeira-comida-img,
+.segunda-comida-img,
+.terceira-comida-img {
+  background-size: cover;
+  background-position: center;
+}
+
+.conteudo-comida {
+  padding: 1em;
+  text-align: center;
+}
+
+.escolha-comida button{
+  border: 0;
+  border-radius: 0 0 10px 10px;
+  color: #f5f6fa;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 1em;
+  text-transform: uppercase;
+  transition: all linear .3s;
+  width: 100%;
+}
+
+.escolha-comida button:hover {
+  font-weight: 500;
+  letter-spacing: .1em;
+}
+
+/* color */
+.card-comida:first-child h3, .card-comida:nth-child(2) h3 {
+  color: #e84118;
+}
+
+.card-comida:first-child button,.card-comida:nth-child(2) button {
+  background-color: #e84118;
+}
+.card-comida:nth-child(3) h3, .card-comida:nth-child(4) h3 {
+    color: #fbc531;
   }
+
+.card-comida:nth-child(3) button, .card-comida:nth-child(4) button {
+    background-color: #fbc531;
+  }
+
+.card-comida:nth-child(5) h3,.card-comida:last-child h3 {
+  color: #0097e6;
+}
+
+.card-comida:nth-child(5) button, .card-comida:last-child button {
+  background-color: #0097e6;
+}
+
+/* media queries */
+@media screen and (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-column-templates: 1fr;
+    grid-auto-rows: auto;
+  }
+  
+  .card-comida {
+    margin: 1.5em;
+  }
+}
