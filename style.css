@@ -11,23 +11,13 @@
 .navbar {
     display: flex; 
     justify-content: space-around;
-    align-items: center;
-    background: #baddad;
-    margin: 25px 0;
-    box-shadow: 0 5px 15px -10px #111;
+    align-items: center; 
+    margin: 5px 0;
+    box-shadow: 0 5px 10px -10px #111;
   }
+
   .logo {
-    order: 1;
-    padding: 1em;
-    border-radius: 100%;
-    background: #111;
-    box-shadow:
-    0 0 0 3px #beddef,
-    0 0 0 15px #111;
-    font-size: 64px;
-    color: #beddef;
-    line-height: 32px;
-    padding: 24px;
+    height: 200px;
   }
 
   /*FILMES*/
@@ -217,12 +207,10 @@
   @media all and (max-width: 800px) {
     .navbar {
       flex-direction: column;
-      align-items: stretch;
+      
     }
     .logo {
-      order: 0;
-      text-align: center;
-      width: 100px;
-      margin: auto auto 20px;
+      height: 100px;  
+      margin: 0px 0;   
     }
   }
