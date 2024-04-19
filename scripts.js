@@ -8,7 +8,7 @@ function salvarFilme(){
     sessionStorage.setItem('sala', document.getElementsByClassName('sala').value);    
     }
 //Assento//
-var assento = document.querySelectorAll('input[type=checkbox]:checked')
+var assento = document.querySelectorAll('input[type=checkbox]:checked'.valueOf)
 function salvarAssento(){
     sessionStorage.setItem('assento', assento);    
     } 
