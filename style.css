@@ -5,7 +5,9 @@
     transition:all .5s;
     user-select:none;
   }
-
+  body{
+  background-color: #e74bcd13;
+}
 /*NAVBAR*/
 
 .navbar {
@@ -14,6 +16,7 @@
     align-items: center; 
     margin: 5px 0;
     box-shadow: 0 5px 10px -10px #111;
+    background-color: #ffe9fb ;
   }
 
   .logo {
@@ -22,6 +25,8 @@
 
   /*FILMES*/
 .filmes-container{
+  
+    margin-top: 50px;
     display:grid;
     grid-template-columns:auto auto;
     gap:60px;
@@ -52,7 +57,7 @@
 
 
 .poster-filme .ver-mais{
-  background:#FC217B;
+  background:#df35c3;
   z-index:-1;
 }
 
