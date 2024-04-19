@@ -10,8 +10,9 @@ function salvarFilme(){
 //Assento//
 var assento = document.querySelectorAll('input[type=checkbox]:checked'.valueOf)
 function salvarAssento(){
-    sessionStorage.setItem('assento', assento);    
-    } 
+    sessionStorage.setItem('assento', assento);   
+} 
+    
 //Comida//
 function salvarComida(){
     sessionStorage.setItem('comida', document.getElementsByClassName('comida').value);    

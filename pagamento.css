@@ -81,6 +81,7 @@ p{
     width:100%;
     letter-spacing: .11rem;
     outline:none;
+    text-align: center;
 }
 
 .button:hover

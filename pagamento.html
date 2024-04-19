@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pagamento.css">
-    <title>Document</title>
+    <title>Nemaflix</title>
 </head>
 <body>
     <nav class="navbar">
@@ -18,7 +18,8 @@
             <div class="rightside">
               <form action="">
                 <h1>Pagamento</h1>
-                <h2>Informacoes do Pagamento</h2>
+                <br>
+                <h3>Informacoes do Pagamento</h2>
                 <p>Nome do Cartao de Credito</p>
                 <input type="text" class="inputbox" name="name" id="nome-cartao" required />
                 <p>Numero do Cartao de Credito</p>
@@ -32,9 +33,7 @@
                 <p class="expcvv_text2">CVV</p>
                 <input type="password" class="inputbox" name="cvv" id="cvv" required />
             </div>
-                <p></p>
-                <button type="submit" class="button">Finalizar</button>
-              </form>
+                <div class="button"><a href="confirmacao.html" class="botao" onclick="salvarPagamento()">Finalizar</a></div>
             </div>
           </div>
         </section>

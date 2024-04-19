@@ -1,0 +1,15 @@
+.container-confirmacao{
+    text-align: left;
+    width: fit-content;
+    margin: 100px auto;
+    border-radius: 20px;
+    background-color: white;
+    padding: 40px;
+    color: rgb(114, 114, 114);
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 4px 3px 20px #3535358c;
+}
+
+h1 {
+    color: #df35c3;
+}
