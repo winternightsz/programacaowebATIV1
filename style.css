@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition:all .5s;
+    user-select:none;
+  }
+
+/*NAVBAR*/
+
+.navbar {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    background: #baddad;
+    margin: 25px 0;
+    box-shadow: 0 5px 15px -10px #111;
+  }
+  .logo {
+    order: 1;
+    padding: 1em;
+    border-radius: 100%;
+    background: #111;
+    box-shadow:
+    0 0 0 3px #beddef,
+    0 0 0 15px #111;
+    font-size: 64px;
+    color: #beddef;
+    line-height: 32px;
+    padding: 24px;
+  }
+
+  /*FILMES*/
+.filmes-container{
+    display:grid;
+    grid-template-columns:auto auto;
+    gap:60px;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.poster-filme{
+  width:300px;
+  height:500px;
+  border-radius:35px;
+  position:relative;
+  box-shadow:0 0 50px #0F274D;
+}
+
+.poster-filme .poster-conteudo,
+.poster-filme .ver-mais{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  border-radius:35px;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+
+.poster-filme .ver-mais{
+  background:#FC217B;
+  z-index:-1;
+}
+
+
+.poster-filme .ver-mais button{
+  position:absolute;
+  left:50%;
+  bottom:15px;
+  transform:translate(-50%,0%);
+  border:none;
+  outline:none;
+  background:none;
+  color:#eee;
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:1.2em;
+  cursor:pointer;
+}
+
+.ver-mais button{
+  color:#222;
+}
+
+
+.ver-mais button:hover{
+  color:#eee;
+}
+
+
+.poster-filme .poster-conteudo{
+  padding:20px 25px;
+}
+
+.poster-conteudo{
+  top:-50px;
+}
+
+
+.poster-filme .poster-conteudo:hover{
+  top:-50px;
+}
+
+.poster-conteudo:hover{
+  top:0px;
+}
+
+.poster-filme .poster-conteudo:hover img{
+  transform:scale(1.2);
+}
+
+.poster-conteudo img{
+  transform:scale(1.2);
+}
+
+.poster-conteudo:hover img{
+  transform:scale(1);
+}
+
+.poster-filme .poster-conteudo img{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  object-fit:cover;
+}
+
+
+.poster-filme .poster-conteudo .sombra{
+  width:100%;
+  height:170px;
+  display:block;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background:#0F274D;
+  box-shadow:0 0 10px 20px #0F274D;
+  filter:blur(10px);
+}
+
+.poster-conteudo .sombra{
+  background:#111;
+  box-shadow:0 0 10px 20px #111;
+}
+
+
+.poster-filme .poster-conteudo .filme{
+  position:absolute;
+  color:#eee;
+  bottom:20px;
+}
+
+
+.poster-filme .poster-conteudo .filme h1{
+  text-transform:capitalize;
+  font-weight:700;
+  font-size:2.2em;
+}
+
+
+.poster-filme .poster-conteudo .filme {
+  color:#aaa;
+  text-transform:capitalize;
+  font-weight:700;
+  font-size:.75em;
+}
+
+
+.poster-filme .poster-conteudo .filme b{
+  margin:5px 0;
+  display:inline-block;
+}
+
+.poster-filme .poster-conteudo .filme {
+  margin:8px 0;
+  font-size:.9em;
+  color:#aaa;
+}
+
+.poster-filme .poster-conteudo .filme .horarios-container{
+  display:flex;
+  gap:10px;
+  margin-top:15px;
+  margin-bottom:20px;
+}
+
+
+.poster-filme .poster-conteudo .filme .horarios-container .horarios{
+  background:rgba(200,200,200,.2);
+  padding:5px 10px;
+  border-radius:50px;
+  font-size:.85em;
+}
+
+
+  /*responsivo filmes*/
+@media (min-width: 0px) and (max-width: 700px){
+  body{
+    grid-template-columns:auto;
+    gap:50px;
+    margin:60px 0;
+  }
+  
+  body:after{
+    top:-40px;
+    height:calc(100% + 590px);
+  }
+  
+}
+
+  /*responsivo navbar*/
+  @media all and (max-width: 800px) {
+    .navbar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .logo {
+      order: 0;
+      text-align: center;
+      width: 100px;
+      margin: auto auto 20px;
+    }
+  }
