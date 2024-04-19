@@ -5,109 +5,110 @@ body{
   margin: 0; 
   font-family: helvetica, arial, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  background-color:rgb(4, 8, 129);
 }
 
-.movie_card{
+.filme-posters{
   position: relative;
   display: block;
-  width: 800px;
-  height: 350px;
+  width: 1000px;
+  height: 600px;
   margin: 100px auto; 
   overflow: hidden;
   border-radius: 10px;
-  transition: all 0.4s;
-  &:hover{
-    transform: scale(1.02);
-    transition: all 0.4s;
-  }
+  transition: all 0.4s;}
 
-  .info_section{
+
+  .informacoes{
     position: relative;
     width: 100%;
     height: 100%;
-	  background-blend-mode: multiply;
+	background-blend-mode: multiply;
     z-index: 2;
-    border-radius: 10px;
-    .movie_header{
+    border-radius: 10px;}
+
+    .header-poster{
       position: relative;
       padding: 25px;
-      height: 40%;
+      height: 40%;}
       h1{
         color: #fff;
-        font-weight: 400;
-      }
+        font-weight: 400;}
+      
       h4{
         color: #9ac7fa;
-        font-weight: 400;
-      }
-      .minutes{
+        font-weight: 400;}
+      
+      .minutos{
         display: inline-block;
         margin-top: 10px;
         color: #fff;
         padding: 5px;
         border-radius: 5px;
-        border: 1px solid rgba(255,255,255,0.13);
-      }
-      .type{
+        border: 1px solid rgba(255,255,255,0.13);}
+     
+      .genero{
         display: inline-block;
         color: #cee4fd;
-        margin-left: 10px;
-      }
-      .locandina{
+        margin-left: 10px;}
+    
+      .posterzinho{
         position: relative;
         float: left;
         margin-right: 20px;
         height: 120px;
-        box-shadow: 0 0 20px -10px rgba(8, 20, 177, 0.739);
-      }
-    }
-    .movie_desc{
+        box-shadow: 0 0 20px -10px rgba(8, 20, 177, 0.739);}
+     
+    .descricao{
       padding: 25px;
+      font-size: x-large;
       height: 50%;
-      .text{
-        color: #cfd6e1;
+      .paragrafo{
+        color: #cfd6e1;}
       }
-    }
-    .movie_social{
+    
+    .horas-filme{
       height: 10%;
       padding-left: 15px;
       padding-bottom: 20px;
+    }
       ul{
         list-style: none;
         padding: 0;
-        li{
-          display: inline-block;
-          color: rgba(255,255,255,0.4);
-          transition: color 0.3s;
-          transition-delay: 0.15s;
-          margin: 0 10px;
+        li{   
+        font-size: 17px;    
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid rgba(23, 122, 150, 0.848);  
+        display: inline-block;
+        color: rgba(23, 122, 150, 0.848);  
+        transition: color 0.3s;
+        transition-delay: 0.15s;
+        margin: -10px 10px;
           &:hover{
             transition: color 0.3s;
-            color: rgba(255,255,255,0.8);
-          }
-          i{
-            font-size: 19px;
+            color: rgba(255,255,255,0.8);         
+            font-size: 23px;
             cursor: pointer;
-          }
-        }
-      }
-    }
-  }
-  .blur_back{
+        }}}
+
+  .nevoa{
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 1;   
     height: 100%; right: 0;
     background-size: cover;
     border-radius: 11px;
-  }
-}
-.bright_back{
+  } 
+
+
+
+.poster-atras{
     background: url("https://upload.wikimedia.org/wikipedia/pt/0/0b/How_to_Train_Your_Dragon_3_poster.jpg");
+    background-size: cover;
   }
 
-  #bright{
+  #ctsd{
     box-shadow: 0px 0px 150px -45px rgba(4, 8, 129, 0.5);
     &:hover{
       box-shadow: 0px 0px 120px -55px rgba(7, 45, 112, 0.691);
@@ -120,47 +121,47 @@ body{
 
 /*responsivo*/
 @media screen and (min-width: 768px) {
-  .movie_header{
+  .header-poster{
     width: 60%;
   }
   
-  .movie_desc{
+  .descricao{
     width: 50%;
   }
   
-  .info_section{
-    background: linear-gradient(to right, #170c4f 50%, transparent 100%);
+  .informacoes{
+    background: linear-gradient(to right, #1c0e60 50%, transparent 100%);
   }
   
-  .blur_back{
+  .poster-atras{
     width: 80%;
     background-position: -100% 10% !important;  
   }
 }
 
 @media screen and (max-width: 768px) {
-  .movie_card{
+  .filme-posters{
     width: 95%;
     margin: 70px auto; 
     min-height: 350px;
     height: auto;
   }
   
-  .blur_back{
+  .poster-atras{
     width: 100%;
     background-position: 50% 50% !important;  
   }
   
-  .movie_header{
+  .header-poster{
     width: 100%;
     margin-top: 85px;
   }
   
-  .movie_desc{
+  .descricao{
     width: 100%;
   }
   
-  .info_section{
+  .informacoes{
     background: linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%);
     display: inline-grid;
   }
