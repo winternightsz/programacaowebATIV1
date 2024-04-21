@@ -1,11 +1,17 @@
-
+:root {
+  --bg-cor: rgb(0, 0, 0);
+  --texto-cor: #eee;
+  --cor-principal: rgb(206, 2, 2);
+  --principal-escura: rgb(157, 2, 2);
+  --principal-maisescura: rgb(119, 0, 0);
+} 
 
 
 body{
   margin: 0; 
   font-family: helvetica, arial, sans-serif;
   font-size: 14px;
-  background-color:rgba(27, 106, 186, 0.422);
+  background-color: var(--bg-cor);
 }
 
 .filme-posters{
@@ -16,7 +22,10 @@ body{
   margin: 100px auto; 
   overflow: hidden;
   border-radius: 10px;
-  transition: all 0.4s;}
+  transition: all 0.4s;
+  box-shadow: 0px 0px 150px -45px var(--cor-principal);
+    
+}
 
 
   .informacoes{
@@ -64,7 +73,7 @@ body{
       font-size: x-large;
       height: 50%;
       .paragrafo{
-        color: #cfd6e1;}
+        color: #eddfdf;}
       }
     
     .horas-filme{
@@ -79,9 +88,8 @@ body{
         font-size: 17px;    
         padding: 5px;
         border-radius: 5px;
-        border: 1px solid rgba(23, 122, 150, 0.848);  
+        border: 1px solid rgb(85, 6, 6);  
         display: inline-block;
-        color: rgba(23, 122, 150, 0.848);  
         transition: color 0.3s;
         transition-delay: 0.15s;
         margin: -10px 10px;
@@ -91,6 +99,9 @@ body{
             font-size: 23px;
             cursor: pointer;
         }}}
+.botao{
+  color: rgba(255, 249, 249, 0.848);  
+}        
 
   .nevoa{
     position: absolute;
@@ -103,17 +114,8 @@ body{
 
 
 
-.poster-atras{
-    background: url("https://upload.wikimedia.org/wikipedia/pt/0/0b/How_to_Train_Your_Dragon_3_poster.jpg");
-    background-size: cover;
-  }
 
-  #ctsd{
-    box-shadow: 0px 0px 150px -45px rgba(4, 8, 129, 0.5);
-    &:hover{
-      box-shadow: 0px 0px 120px -55px rgba(7, 45, 112, 0.691);
-    }
-  }
+
 
 
 
@@ -130,7 +132,7 @@ body{
   }
   
   .informacoes{
-    background: linear-gradient(to right, #1c0e60 50%, transparent 100%);
+    background: linear-gradient(to right, var(--principal-escura) 50%, transparent 100%);
   }
   
   .poster-atras{

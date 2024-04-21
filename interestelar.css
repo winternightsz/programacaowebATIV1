@@ -130,7 +130,7 @@ body{
     }
     
     .informacoes{
-      background: linear-gradient(to right, #09102b 50%, transparent 100%);
+      background: linear-gradient(to right, var(--principal-escura) 50%, transparent 100%);
     }
     
     .poster-atras{

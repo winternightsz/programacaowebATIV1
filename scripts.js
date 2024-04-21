@@ -1,6 +1,7 @@
 //Filme//
 function salvarFilmeNome(){
     sessionStorage.setItem('filmenome', document.getElementsByClassName('filmenome').value);
+    
 }
 
 function salvarFilme(){
@@ -29,11 +30,11 @@ function carregarItensDeConfirmacao(){
 
     document.getElementsByClassName('filme').textContent = sessionStorage.getItem('filme');
     document.querySelectorAll('input[type=checkbox]:checked').textContent = sessionStorage.getItem('assento');
-    document.getElementsByClassName('comida').textContent = 'R$' + sessionStorage.getItem('comida');
+    document.getElementsByClassName('comida').textContent = sessionStorage.getItem('comida');
 
     document.getElementById('nome-cartao').textContent = sessionStorage.getItem('nome-cartao');
     document.getElementById('numero-cartao').textContent = sessionStorage.getItem('numero-cartao');
-    document.getElementById('validade').textContent = 'R$' + sessionStorage.getItem('validade');
+    document.getElementById('validade').textContent = sessionStorage.getItem('validade');
     document.getElementById('cvv').textContent = sessionStorage.getItem('cvv');
 
 }
