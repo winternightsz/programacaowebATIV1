@@ -1,3 +1,13 @@
+/*Variaveis*/
+:root {
+    --bg-cor: rgb(0, 0, 0);;
+    --texto-cor: #eee;
+    --texto-avermelhado: ##eddfdf;
+    --cor-principal: rgb(206, 2, 2);
+    --principal-escura: rgb(157, 2, 2);
+    --principal-maisescura: rgb(119, 0, 0);
+  } 
+
 .container-confirmacao{
     text-align: left;
     width: fit-content;
@@ -11,5 +21,5 @@
 }
 
 h1 {
-    color: #df35c3;
+    color: var(--cor-principal);
 }
