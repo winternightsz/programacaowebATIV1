@@ -1,34 +1,45 @@
-
+/*Variaveis*/
+:root {
+    --bg-cor: rgb(0, 0, 0);
+    --texto-cor: #eee;
+    --texto-avermelhado: #eddfdf;
+    --cor-principal: rgb(206, 2, 2);
+    --principal-escura: rgb(157, 2, 2);
+    --principal-maisescura: rgb(119, 0, 0);
+  }
+ body{
+    font-family: 'Roboto', sans-serif;
+ } 
+  .titulo {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+    font: sans-serif;
+    color: var(--cor-principal);
+  }
+  
 .pagamento-container
-{       
-    font-family: 'Roboto', sans-serif!important;
-	min-height: 100vh;
+{     
+    padding: 5%;      
 	width: 100%;
 	display: flex;
     flex-direction: row; 
-    color:#963E7B;
+    color:var(--cor-principal);  
+    justify-content: space-between;   
 }
 
-.card {
-	width: 60rem;
-    margin: auto;
-    background: white;
+.cartao-info {
+	width: 60%;   
+    background-color: #ffffff;
     position:center;
-    align-self: center;
-    top: 50rem;
+    align-self: center;  
     border-radius: 1.5rem;
     box-shadow: 4px 3px 20px #3535358c;
-    
-}
-
-
-.rightside {
-    background-color: #ffffff;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
 	border-bottom-right-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
-    padding: 1rem 2rem 3rem 3rem;
+    padding: 2rem 3rem 2rem 4rem;
 }
 
 p{
@@ -38,9 +49,8 @@ p{
     margin: .8rem 0;
 }
 
-.inputbox
+.inputs
 {
-    color:#030303;
 	width: 100%;
     padding: 0.5rem;
     border: none;
@@ -51,26 +61,25 @@ p{
     color: #615a5a;
     font-size: 1.1rem;
     font-weight: 500;
-  outline:none;
+    outline:none;
 }
 
-.expcvv {
+.validade-cvv {
     display:flex;
     justify-content: space-between;
     padding-top: 0.6rem;
 }
 
-.expcvv_text{
+.validade-texto{
     padding-right: 1rem;
 }
-.expcvv_text2{
+.cvv-texto{
     padding:0 1rem;
 }
 
-.button{
-    background: linear-gradient(
-135deg
-, #753370 0%, #298096 100%);
+.botao-finalizar{
+    background: linear-gradient( 135deg, #df3e3e 0%,
+     #8e1515 100%);
     padding: 15px;
     border: none;
     border-radius: 50px;
@@ -84,11 +93,37 @@ p{
     text-align: center;
 }
 
-.button:hover
+.botao-finalizar:hover
 {
 	transform: scale(1.05) translateY(-3px);
     box-shadow: 3px 3px 6px #38373785;
 }
+
+.itens-ecolhidos{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 30%; 
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+	border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+.itens-ecolhidos h2 {
+    align-self: center;
+    justify-self: center;
+    font-size: 2.5rem;
+}
+         
+.itens {
+    height: 100px;
+    background-color: purple;
+    width: 10px;
+  }
 
 @media only screen and (max-width: 1000px) {
     .card{
@@ -96,33 +131,8 @@ p{
         width: auto;
       
     }
-
-    .leftside{
-        width: 100%;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 0;
-      border-top-right-radius:0;
-      border-radius:0;
+    .pagamento-container{
+        flex-direction: column; 
     }
 
-    .rightside{
-        width:auto;
-        border-bottom-left-radius: 1.5rem;
-        padding:0.5rem 3rem 3rem 2rem;
-      border-radius:0;
-    }
 }
-
-.itens-ecolhidos{
-    display: grid;
-    display: flex;
-    flex-direction: row; 
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-         
-.itens {
-    height: 100px;
-    background-color: purple;
-    width: 100%;
-  }
