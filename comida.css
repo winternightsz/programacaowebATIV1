@@ -1,11 +1,140 @@
-.comidas-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+/*Variaveis*/
+:root {
+  --bg-cor: rgb(0, 0, 0);
+  --texto-cor: #eee;
+  --texto-avermelhado: #eddfdf;
+  --cor-principal: rgb(206, 2, 2);
+  --principal-escura: rgb(157, 2, 2);
+  --principal-maisescura: rgb(119, 0, 0);
 }
-         
-.comida {
-    height: 100px;
-    background-color: purple;
-    width: 100%;
+.titulo {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 60px;
+  font: sans-serif;
+  color: var(--cor-principal);
+}
+
+.container-comida {
+  font-size: 1.6em;
+  margin-top: 5%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  font: sans-serif;
+}
+/* PRODUCT CARD */
+.card-comida {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #2f3640;
+  margin: 0 0.5em;
+  transition: all linear 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0em 0.1em 0.9em rgba(19, 2, 15, 0.2);
+}
+
+.card-comida:hover,
+.card-comida:active {
+  box-shadow: 0.2em 0.5em 0.5em rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+.imagem-comida {
+  border-radius: 10px 10px 0 0;
+  padding: 10%;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.primeira-comida-img {
+  height: 300px;
+  width: 300px;
+  background-image: url(./pipocacine.jpg);
+}
+.segunda-comida-img {
+  height: 300px;
+  width: 300px;
+  background-image: url(./refricine.jpg);
+}
+.terceira-comida-img {
+  height: 300px;
+  width: 300px;
+  background-image: url(./combocine.jpg);
+}
+.primeira-comida-img,
+.segunda-comida-img,
+.terceira-comida-img {
+  background-size: cover;
+  background-position: center;
+}
+.conteudo-comida {
+  padding: 1em;
+  text-align: center;
+}
+.escolha-comida button {
+  border: 0;
+  border-radius: 0 0 10px 10px;
+  color: var(--texto-cor);
+  cursor: pointer;
+  font-family: inherit;
+  padding: 1em;
+  font-size: x-large;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+  width: 100%;
+}
+.escolha-comida button:hover {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.botaocomida {
+  margin: 20px auto;
+  background-color: var(--cor-principal);
+  text-align: center;
+  width: 150px;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* color */
+.card-comida:first-child h3,
+.card-comida:nth-child(2) h3 {
+  color: var(--cor-principal);
+}
+
+.card-comida:first-child button,
+.card-comida:nth-child(2) button {
+  background-color: var(--cor-principal);
+}
+.card-comida:nth-child(3) h3,
+.card-comida:nth-child(4) h3 {
+  color: var(--principal-escura);
+}
+
+.card-comida:nth-child(3) button,
+.card-comida:nth-child(4) button {
+  background-color: var(--principal-escura);
+}
+
+.card-comida:nth-child(5) h3,
+.card-comida:last-child h3 {
+  color: var(--principal-maisescura);
+}
+.card-comida:nth-child(5) button,
+.card-comida:last-child button {
+  background-color: var(--principal-maisescura);
+}
+/* media queries */
+@media screen and (max-width: 800px) {
+  .container-comida {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
   }
+  .card-comida {
+    margin: 1.5em;
+  }
+}
