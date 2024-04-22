@@ -24,8 +24,9 @@ function salvarAssento(){
         sessionStorage.setItem('nomecomidas', '0');
       }
 }*/
-var comidascont = 0;
+var comidascont = 1;
 var comidasvet;
+
 function salvarComidas(x){
     sessionStorage.setItem('comidas'+ comidascont, x);
       comidascont++;
@@ -43,7 +44,10 @@ function carregarItensDeConfirmacao(){
 
     document.getElementById('filmenome').textContent = 'R$' + sessionStorage.getItem('filmenome');
     document.getElementById('assento').textContent = 'R$' + sessionStorage.getItem('assento');
-    
+    for (let i = 0; i <= comidascont; i++) {
+    document.getElementById('comidas').innerHTML += sessionStorage.getItem('comidas' + i) + '<br>';
+
+    }
     document.getElementById('nomecomidas').textContent = 'R$' + sessionStorage.getItem('nomecomidas');
 
     document.getElementById('nome-cartao').textContent = sessionStorage.getItem('nome-cartao');
@@ -51,11 +55,4 @@ function carregarItensDeConfirmacao(){
     document.getElementById('validade').textContent = sessionStorage.getItem('validade');
     document.getElementById('cvv').textContent = sessionStorage.getItem('cvv');
 
-}
-
-function carregarComidas(){
-    var i = 0;
-    for (i; i <= comidascont.length; i++) {
-        document.getElementById('comidas').textContent = sessionStorage.getItem('comidas' + 0);    
-    }
 }
