@@ -121,9 +121,12 @@ p{
          
 .itens {
     height: 100px;
-    background-color: purple;
-    width: 10px;
+    
+    width: 100%;
   }
+.itens span{
+    color: black;
+}
 
 @media only screen and (max-width: 1000px) {
     .card{
