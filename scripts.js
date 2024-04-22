@@ -1,7 +1,5 @@
 //Filme//
-function salvarFilmeNome(){
-    sessionStorage.setItem('filmenome', document.getElementsByClassName('filmenome').value);
-}
+
 var sala = 1;
 function salvarFilme(){
     sessionStorage.setItem('filmenome', document.getElementById('filmenome').textContent);
