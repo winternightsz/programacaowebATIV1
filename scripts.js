@@ -48,7 +48,7 @@ function salvarPagamento() {
     sessionStorage.setItem('numero-cartao', document.getElementById('numero-cartao').value);
     sessionStorage.setItem('validade', document.getElementById('validade').value);
     sessionStorage.setItem('cvv', document.getElementById('cvv').value);
-} 
+}  
 
 function carregarItensDeConfirmacao(){
     let cont = sessionStorage.getItem('contador');

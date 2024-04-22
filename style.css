@@ -19,6 +19,14 @@ body {
   background-color: var(--bg-cor);
   font-family: "Roboto", sans-serif;
 }
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background: var(--principal-maisescura);
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--cor-principal);
+  border-radius: 5rem;
+}
 /*NAVBAR*/
 
 .navbar {
@@ -40,6 +48,7 @@ body {
   font-size: 35px;
   text-decoration: none;
   color: var(--principal-escura);
+  
 }
 .logo {
   height: 200px;
@@ -71,7 +80,7 @@ body {
   height: 500px;
   border-radius: 35px;
   position: relative;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.498);
+  
 }
 
 .poster-filme .poster-conteudo,
@@ -83,7 +92,6 @@ body {
   left: 0;
   border-radius: 35px;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .poster-filme .ver-mais {

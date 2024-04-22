@@ -20,28 +20,26 @@
 
           <div class="cartao-info"> 
             
-              <form action="">
+              <form action="./confirmacao.html">
                 <h2>Informacoes do Pagamento</h2>
                 <p>Nome do Cartao de Credito</p>
-                <input type="text" class="inputs" name="name" id="nome-cartao" min="1" max="30" required>
+                <input type="text" class="inputs" name="name" id="nome-cartao" min="1" max="30" >
                 <p>Numero do Cartao de Credito</p>
-                <input type="number" class="inputs" name="card_number" id="numero-cartao" min="12" max="12" required>
+                <input type="text" class="inputs" name="card_number" id="numero-cartao" pattern="[0-9]{12}" placeholder="Apenas números" >
     
             <div class="validade-cvv">
                 <p class="validade-texto">Validade</p>
-                <input type="date" class="inputs" name="exp_date" id="validade" required>
+                <input type="date" class="inputs" name="exp_date" id="validade" >
     
                 <p class="cvv-texto">CVV</p>
                 <input type="password" class="inputs" name="cvv" id="cvv" required>
             </div>
-                <div class="botao-finalizar"><a href="confirmacao.html" class="botao" onclick="salvarPagamento()">Finalizar</a></div>          
+            <input type="submit" class="botao-finalizar" class="botao" onclick="salvarPagamento()">
           </div>
-          
-
+                    
+          </form>
         </section>
-
-        
-        
+   
 </body>
 <script type="text/javascript" src="./scripts.js"></script>
 </html>
