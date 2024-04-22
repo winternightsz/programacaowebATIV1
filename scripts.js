@@ -2,9 +2,13 @@
 
 var sala = 1;
 function salvarFilme(){
-    sessionStorage.setItem('filmenome', document.getElementById('filmenome').textContent);
-    sessionStorage.setItem('horario', document.getElementById('horario').textContent);
-    sessionStorage.setItem('sala', sala);    
+    var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+
+      var horario = checkboxes[0];
+      sessionStorage.setItem('sala', horario.value);
+      sessionStorage.setItem('horario', horario.id);
+
+    sessionStorage.setItem('filmenome', document.getElementById('filmenome').textContent);        
     }
 //Assento//
 function salvarAssento() {

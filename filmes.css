@@ -104,23 +104,36 @@ ul {
   padding: 0;
   li {
     font-size: 17px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid rgb(85, 6, 6);
     display: inline-block;
     transition: color 0.3s;
-    transition-delay: 0.15s;
     margin: -10px 10px;
+    color: var(--texto-cor);
     &:hover {
-      transition: color 0.3s;
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 23px;
+      transition: color 0.1s;
+      color: rgba(198, 76, 76, 0.8);
       cursor: pointer;
+      letter-spacing: 0.1em;
     }
   }
 }
-.botao {
-  color: rgba(255, 249, 249, 0.848);
+.horas-filme input[type="checkbox"] {
+  
+  padding: 5px;
+  border: 1px solid rgb(85, 6, 6);
+  position: absolute;
+  opacity: 0;
+}
+
+.horas-filme input[type="checkbox"]:checked + label {
+  color: var(--texto-cor);
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(85, 6, 6);
+  background-color: rgb(67, 5, 5);
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
 }
 
 .nevoa {
