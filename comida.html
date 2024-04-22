@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="comida.css">
-    
-
     <title>Nemaflix</title>
 </head>
 
@@ -18,12 +16,9 @@
     <a class="" href="#">Em Breve</a>
     <a class="" href="#">Contato</a>
   </nav>
-
-
-
     <h1 class="titulo">Escolha sua comida</h1>
 
-        <section class="container-comida">
+        <section class="container-comida" id="comidas">
 
             <div class="card-comida">
               <div class="imagem-comida"><div class="primeira-comida-img"></div></div>
@@ -32,7 +27,7 @@
                 <p>R$12</p>
               </div>
               <div class="escolha-comida">
-                <button type="submit">Adicionar</button>
+                <button href="pagamento.html" value="Pipoca Pequena" onclick="salvarComidas(this.value)">Adicionar</button>
               </div>
             </div>
 
@@ -43,7 +38,7 @@
                   <p>R$18</p>
                 </div>
                 <div class="escolha-comida">
-                  <button type="submit">Adicionar</button>
+                  <button type="submit" value="Pipoca Grande" onclick="salvarComidas(this.value)">Adicionar</button>
                 </div>
               </div>
 
@@ -55,7 +50,7 @@
                 <p>R$9</p>
               </div>
               <div class="escolha-comida">
-                <button type="submit">Adicionar</button>
+                <button type="submit" value="9" onclick="salvarComidas(this.value)">Adicionar</button>
               </div>
             </div>
 
@@ -66,7 +61,7 @@
                   <p>R$14</p>
                 </div>
                 <div class="escolha-comida">
-                  <button type="submit">Adicionar</button>
+                  <button type="submit" value="14" onclick="salvarComidas(this.value)">Adicionar</button>
                 </div>
               </div>
             
@@ -94,8 +89,8 @@
               </div>
           </section>
           <div class="botaocomida">
-            <a href="pagamento.html" class="botao" onclick="salvarAssento()">SELECIONAR</a>
+            <a href="pagamento.html" class="botao" >SELECIONAR</a>
           </div>
-        
+          <script type="text/javascript" src="./scripts.js"></script>
 </body>
 </html>
