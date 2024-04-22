@@ -54,17 +54,20 @@
     position: relative;
   }
 
+  /*PODE CLICAR*/
   .cadeira input[type="checkbox"] {
     position: absolute;
     opacity: 0;
   }
   .cadeira input[type="checkbox"]:checked + label {
-    background: #e1a5fd;
+    background: var(--cor-principal);
     -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
     animation-duration: 300ms;
     animation-fill-mode: both;
   }
+
+  /*NAO PODE CLICAR*/
   .cadeira input[type="checkbox"]:disabled + label {
     background: #ddd;
     text-indent: -9999px;
@@ -82,6 +85,8 @@
     box-shadow: none;
     cursor: not-allowed;
   }
+
+  /*NOMES NAS CADEIRAS*/
   .cadeira label {
     display: block;
     position: relative;
@@ -92,7 +97,7 @@
     line-height: 1.5rem;
     padding: 4px 0;
     color: #fff;
-    background: #26a69a;
+    background: #26a679;
     border-radius: 2px;
     animation-duration: 300ms;
     animation-fill-mode: both;

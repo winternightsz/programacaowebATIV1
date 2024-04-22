@@ -9,11 +9,26 @@ function salvarFilme(){
     sessionStorage.setItem('sala', sala);    
     }
 //Assento//
-var assento;
-function salvarAssento(){
-    assento = document.querySelectorAll('input[type=checkbox]:checked'.valueOf);
-    sessionStorage.setItem('assento', assento);   
-} 
+function salvarAssento() {
+    // Seleciona todos os checkboxes marcados
+    var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+    
+    // Cria uma string para armazenar os valores dos IDs dos checkboxes marcados
+    var assentosSelecionados = "";
+    
+    // Itera sobre os checkboxes marcados
+    for (var i = 0; i < checkboxes.length; i++) {
+      var checkbox = checkboxes[i];
+      // Adiciona o valor do ID do checkbox à string de assentos selecionados
+      if (assentosSelecionados !== "") {
+        assentosSelecionados += ","; // Adiciona uma vírgula como separador
+      }
+      assentosSelecionados += checkbox.id;
+    }
+    
+    // Armazena a string de assentos selecionados no sessionStorage
+    sessionStorage.setItem('assentosSelecionados', assentosSelecionados);   
+  }
     
 //Comida//
 
@@ -38,7 +53,7 @@ function carregarItensDeConfirmacao(){
     document.getElementById('filmenome').textContent = sessionStorage.getItem('filmenome');
     document.getElementById('horario').textContent = sessionStorage.getItem('horario');
     document.getElementById('sala').textContent = sessionStorage.getItem('sala');
-    document.getElementById('assento').textContent = 'R$' + sessionStorage.getItem('assento');
+    document.getElementById('assento').textContent = sessionStorage.getItem('assentosSelecionados');
     for (let i = 0; i < cont; i++) {
     document.getElementById('comidas').innerHTML += sessionStorage.getItem('comidas' + i) + '<br>';
 
