@@ -37,6 +37,14 @@
   box-shadow: 0em 0.1em 0.9em rgba(19, 2, 15, 0.2);
 }
 
+.card-comida button{
+  background-color: var(--principal-escura);
+}
+
+.card-comida h3 {
+  color: var(--principal-escura);
+}
+
 .card-comida:hover,
 .card-comida:active {
   box-shadow: 0.2em 0.5em 0.5em rgba(0, 0, 0, 0.4);
@@ -91,7 +99,8 @@
   font-weight: 500;
   letter-spacing: 0.1em;
 }
-.botaocomida {
+
+.botaocomida{
   margin: 20px auto;
   background-color: var(--cor-principal);
   text-align: center;
@@ -99,34 +108,13 @@
   border-radius: 10px;
   padding: 10px;
 }
-/* color */
-.card-comida:first-child h3,
-.card-comida:nth-child(2) h3 {
-  color: var(--cor-principal);
-}
 
-.card-comida:first-child button,
-.card-comida:nth-child(2) button {
-  background-color: var(--cor-principal);
-}
-.card-comida:nth-child(3) h3,
-.card-comida:nth-child(4) h3 {
-  color: var(--principal-escura);
-}
-
-.card-comida:nth-child(3) button,
-.card-comida:nth-child(4) button {
-  background-color: var(--principal-escura);
-}
-
-.card-comida:nth-child(5) h3,
-.card-comida:last-child h3 {
-  color: var(--principal-maisescura);
-}
-.card-comida:nth-child(5) button,
-.card-comida:last-child button {
+.botaocomida:hover{
   background-color: var(--principal-maisescura);
+  cursor: pointer;
+  letter-spacing: 0.1em;
 }
+
 /* media queries */
 @media screen and (max-width: 800px) {
   .container-comida {

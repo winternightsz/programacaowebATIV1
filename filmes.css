@@ -117,9 +117,7 @@ ul {
   }
 }
 .horas-filme input[type="checkbox"] {
-  
   padding: 5px;
-  border: 1px solid rgb(85, 6, 6);
   position: absolute;
   opacity: 0;
 }
@@ -144,6 +142,11 @@ ul {
   right: 0;
   background-size: cover;
   border-radius: 11px;
+}
+.divBotao:hover{
+  background-color: var(--principal-maisescura);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 #ctsd {
