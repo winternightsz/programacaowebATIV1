@@ -31,11 +31,15 @@ function salvarAssento() {
 //Comida//
 
 var comidascont = 0;
-
-function salvarComidas(x){   
-    sessionStorage.setItem('comidas' + comidascont, x);
-    comidascont++;
+var comidaprecocont= 0 ; 
+function salvarComidas(x){  
+    sessionStorage.setItem('comidas' + comidascont, x);   
+    comidascont++; 
     sessionStorage.setItem('contador', comidascont);
+
+    sessionStorage.getItem('comidaspreco') = comidaprecocont;
+    comidaprecocont = comidaprecocont + x;
+    sessionStorage.setItem('comidaspreco', comidaprecocont);   
 }
 
 //Pagamento//  
@@ -56,7 +60,7 @@ function carregarItensDeConfirmacao(){
     document.getElementById('comidas').innerHTML += sessionStorage.getItem('comidas' + i) + '<br>';
 
     }
-    document.getElementById('nomecomidas').textContent = 'R$' + sessionStorage.getItem('contador');
+    document.getElementById('nomecomidas').textContent = 'R$' + sessionStorage.getItem('comidaspreco');
 
     document.getElementById('nome-cartao').textContent = sessionStorage.getItem('nome-cartao');
     document.getElementById('numero-cartao').textContent = sessionStorage.getItem('numero-cartao');
