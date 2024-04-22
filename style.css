@@ -69,8 +69,7 @@ html::-webkit-scrollbar-thumb {
   flex-direction: row;
   gap: 60px;
   justify-content: center;
-  
-  min-height: 100vh;
+  min-height: 60vh;
   font-family: "Roboto", sans-serif;
  
 }
@@ -220,6 +219,8 @@ html::-webkit-scrollbar-thumb {
   border-radius: 50px;
   font-size: 0.85em;
 }
+/*SLIDER PROS FILMES*/
+
 
 /*responsivo filmes*/
 @media (min-width: 0px) and (max-width: 700px) {
