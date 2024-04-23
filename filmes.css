@@ -6,16 +6,19 @@
   --principal-maisescura: rgb(119, 0, 0);
 }
 
-body {
-  margin: 0;
+
+.filme-container{
   font-family: helvetica, arial, sans-serif;
   font-size: 14px;
-  background-color: var(--bg-cor);
+  min-height: 65vh;
+  padding-bottom: 10px;
+  position: relative;
+  display: block;
+  font-family: "Roboto", sans-serif;
 }
 
 .filme-posters {
-  position: relative;
-  display: block;
+  
   width: 1000px;
   height: 600px;
   margin: 100px auto;
@@ -26,6 +29,7 @@ body {
 }
 
 .informacoes {
+  
   position: relative;
   width: 100%;
   height: 100%;
@@ -35,9 +39,10 @@ body {
 }
 
 .header-poster {
+  
   position: relative;
   padding: 25px;
-  height: 40%;
+  height:40%;
 }
 h1 {
   color: #fff;
@@ -120,6 +125,10 @@ ul {
   padding: 5px;
   position: absolute;
   opacity: 0;
+  cursor: pointer;
+}
+.horas-filme label{
+  cursor: pointer;
 }
 
 .horas-filme input[type="checkbox"]:checked + label {
@@ -132,6 +141,7 @@ ul {
   animation-name: rubberBand;
   animation-duration: 300ms;
   animation-fill-mode: both;
+  cursor: pointer;
 }
 
 .nevoa {

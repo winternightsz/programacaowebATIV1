@@ -86,5 +86,5 @@ function carregarItensDeConfirmacao(){
     document.getElementById('numero-cartao').textContent = sessionStorage.getItem('numero-cartao');
     document.getElementById('validade').textContent = sessionStorage.getItem('validade');
     document.getElementById('cvv').textContent = sessionStorage.getItem('cvv');
-    document.getElementById('total').textContent = sessionStorage.getItem('total');
+    document.getElementById('total').textContent = 'R$' + sessionStorage.getItem('total');
 }

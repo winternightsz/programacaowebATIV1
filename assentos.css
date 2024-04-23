@@ -10,6 +10,9 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+.container-tudo{
+  min-height: 65vh;
+}
 .cinema {
   margin: 100px auto 0 auto;
   width: fit-content;

@@ -221,7 +221,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .footer { 
-  margin-top: 30px;
+  margin-bottom: 0;
   display: flex;
   justify-content: center;
   background-color: var(--principal-escura);
@@ -241,7 +241,6 @@ html::-webkit-scrollbar-thumb {
 
 .logofooter{
   height: 150px;
-
 }
 
 .social {
@@ -275,6 +274,7 @@ html::-webkit-scrollbar-thumb {
   body:after {
     top: -40px;
     height: calc(100% + 590px);
+    background-color: antiquewhite;
   }
 }
 
