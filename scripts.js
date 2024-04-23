@@ -50,6 +50,7 @@ function salvarComidas(x){
 
     comidaprecocont += num;
     sessionStorage.setItem('comidaspreco', comidaprecocont.toString());  
+    alert("Voce adicionou " + x + ".");
 }
 
 //Pagamento//  

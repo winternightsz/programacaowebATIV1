@@ -219,7 +219,49 @@ html::-webkit-scrollbar-thumb {
   border-radius: 50px;
   font-size: 0.85em;
 }
-/*SLIDER PROS FILMES*/
+
+.footer { 
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--principal-escura);
+}
+.conteudo-footer{
+  min-width: 80%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.conteudo-footer a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logofooter{
+  height: 150px;
+
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.social .bx {
+  background: var(--bg-color);
+  padding: 2px;
+  font-size: 2rem;
+  border-radius: 50%;
+  border: 4px solid rgb(40, 40, 40);
+  color: rgb(66, 3, 3);
+}
+
+.social .bx:hover {
+  color: rgb(215, 29, 29);
+  transition: 0.2s all linear;
+}
 
 
 /*responsivo filmes*/
